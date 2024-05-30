@@ -22,11 +22,12 @@ const profiles: { title: string; link: string }[] = [
 const Header = () => {
   const navigate = useNavigate();
   const navigateHome = () => navigate('/');
+  const imgUrl = new URL('/images/gyulhana.jpeg', import.meta.url).href;
 
   return (
     <HeaderContainer>
       <HeaderFlexRowContainer onClick={navigateHome}>
-        <Image src="/public/images/gyulhana.jpeg" />
+        <Image src={imgUrl} />
         <RowBlock width={24} />
         <T1>gyulhana.blog</T1>
       </HeaderFlexRowContainer>
