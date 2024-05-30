@@ -54,3 +54,10 @@ export const StyledLink = styled.a`
     text-decoration: none;
   }
 `;
+
+export const FlexRowContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+`;

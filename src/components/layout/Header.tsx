@@ -1,10 +1,10 @@
 import React from 'react';
-import { RowBlock, StyledLink, T1 } from '@/styles';
+import { RowBlock, StyledLink, T1 } from '@/styles/common.style';
 import {
   HeaderContainer,
+  HeaderFlexRowContainer,
   Image,
-  FlexRowContainer,
-} from '@/styles/layout/Header.style';
+} from '@/styles/layout.style';
 
 const profiles: { title: string; link: string }[] = [
   {
@@ -21,20 +21,20 @@ const profiles: { title: string; link: string }[] = [
 const Header = () => {
   return (
     <HeaderContainer>
-      <FlexRowContainer>
+      <HeaderFlexRowContainer>
         <Image src="/public/images/gyulhana.jpeg" />
         <RowBlock width={24} />
         <T1>gyulhana.blog</T1>
-      </FlexRowContainer>
+      </HeaderFlexRowContainer>
 
-      <FlexRowContainer position="right">
+      <HeaderFlexRowContainer position="right">
         {profiles.map(({ link, title }) => (
           <React.Fragment key={title}>
             <StyledLink href={link}>{title}</StyledLink>
             {title !== 'linkedIn' && <RowBlock width={24} />}
           </React.Fragment>
         ))}
-      </FlexRowContainer>
+      </HeaderFlexRowContainer>
     </HeaderContainer>
   );
 };
