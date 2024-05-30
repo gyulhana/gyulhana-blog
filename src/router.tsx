@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, redirect } from 'react-router-dom';
 
 import HomePage from '@/pages/HomePage';
 import PostListPage from '@/pages/PostListPage';
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/index',
+        path: '/',
         element: <HomePage />,
       },
       {
