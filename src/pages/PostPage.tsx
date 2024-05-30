@@ -1,8 +1,4 @@
-import React from 'react';
-
-type Props = {};
-
-const PostPage = (props: Props) => {
+const PostPage = () => {
   return <div>Post</div>;
 };
 

@@ -1,8 +1,4 @@
-import React from 'react';
-
-type Props = {};
-
-const PostListPage = (props: Props) => {
+const PostListPage = () => {
   return <div>PostList</div>;
 };
 

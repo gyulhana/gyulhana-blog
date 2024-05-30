@@ -2,9 +2,7 @@ import PostCard from '@/components/posts/PostCard';
 import { Spacer } from '@/styles/common.style';
 import { PostListContainer } from '@/styles/posts.style';
 
-type Props = {};
-
-const PostList = (props: Props) => {
+const PostList = () => {
   return (
     <PostListContainer>
       📌 Pinned Posts

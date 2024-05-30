@@ -1,21 +1,18 @@
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
 import { LayoutContainer } from '@/styles/layout.style';
+import React from 'react';
 
 import { Outlet } from 'react-router-dom';
 
-type Props = {};
-
-const Layout = (props: Props) => {
-  return (
-    <div>
-      <Header />
-      <LayoutContainer>
-        <Outlet />
-      </LayoutContainer>
-      <Footer />
-    </div>
-  );
-};
+const Layout = () => (
+  <React.Fragment>
+    <Header />
+    <LayoutContainer>
+      <Outlet />
+    </LayoutContainer>
+    <Footer />
+  </React.Fragment>
+);
 
 export default Layout;

@@ -18,5 +18,5 @@ export const TextArea = styled.div`
 export const CardImage = styled.div`
   width: 100%;
   height: 70%;
-  background-color: red;
+  background-color: aliceblue;
 `;

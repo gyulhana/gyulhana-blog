@@ -1,8 +1,6 @@
 import { CardContainer, CardImage, TextArea } from '@/styles/posts.style';
 
-type Props = {};
-
-const PostCard = (props: Props) => {
+const PostCard = () => {
   return (
     <CardContainer>
       <CardImage />
