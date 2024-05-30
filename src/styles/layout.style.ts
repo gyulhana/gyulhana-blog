@@ -37,4 +37,5 @@ export const HeaderFlexRowContainer = styled(FlexRowContainer)<{
 export const LayoutContainer = styled.section`
   width: 100%;
   height: calc(100vh - 12rem);
+  overflow: scroll;
 `;
