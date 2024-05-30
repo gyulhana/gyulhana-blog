@@ -1,6 +1,10 @@
 import React from 'react';
-import { FlexRowContainer, RowBlock, StyledLink, T1 } from '@/styles';
-import { HeaderContainer, Image } from '@/components/layout/Header.style';
+import { RowBlock, StyledLink, T1 } from '@/styles';
+import {
+  HeaderContainer,
+  Image,
+  FlexRowContainer,
+} from '@/styles/layout/Header.style';
 
 const profiles: { title: string; link: string }[] = [
   {
@@ -23,7 +27,7 @@ const Header = () => {
         <T1>gyulhana.blog</T1>
       </FlexRowContainer>
 
-      <FlexRowContainer>
+      <FlexRowContainer position="right">
         {profiles.map(({ link, title }) => (
           <React.Fragment key={title}>
             <StyledLink href={link}>{title}</StyledLink>

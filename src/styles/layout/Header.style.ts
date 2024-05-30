@@ -17,3 +17,15 @@ export const Image = styled.img`
   height: 3rem;
   border-radius: 50%;
 `;
+
+export const FlexRowContainer = styled.div<{ position?: 'right' }>`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+
+  @media (max-width: 456px) {
+    width: ${({ position }) => (position === 'right' ? 0 : 'auto')};
+    height: ${({ position }) => (position === 'right' ? 0 : 'auto')};
+  }
+`;
