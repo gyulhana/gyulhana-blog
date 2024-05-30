@@ -5,6 +5,7 @@ import {
   HeaderFlexRowContainer,
   Image,
 } from '@/styles/layout.style';
+import { useNavigate } from 'react-router-dom';
 
 const profiles: { title: string; link: string }[] = [
   {
@@ -19,9 +20,12 @@ const profiles: { title: string; link: string }[] = [
 ];
 
 const Header = () => {
+  const navigate = useNavigate();
+  const navigateHome = () => navigate('/');
+
   return (
     <HeaderContainer>
-      <HeaderFlexRowContainer>
+      <HeaderFlexRowContainer onClick={navigateHome}>
         <Image src="/public/images/gyulhana.jpeg" />
         <RowBlock width={24} />
         <T1>gyulhana.blog</T1>
